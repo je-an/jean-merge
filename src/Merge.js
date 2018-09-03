@@ -1,13 +1,11 @@
 define([], function () {
     /**
      * Merges two objects into one 
-     * @alias Merge 
-     * @constructor
-     * @param {Object} options - options object
+     * @param {Object} defaultOptions - default options provided by system
+     * @param {Object} options - options provided by user
      */
-    var Merge = function(options){
-
-    };
-
-    return Merge;
+    return function merge(defaultOptions, options) {
+        Object.keys(options).forEach(function (key) { defaultOptions[key] = options[key]; });
+        return defaultOptions;
+    }
 });
