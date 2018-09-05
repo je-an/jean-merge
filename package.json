@@ -1,6 +1,6 @@
 {
   "name": "jean-merge",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Merges two objects into one",
   "main": "dist/jean-merge.js",
   "scripts": {
@@ -10,7 +10,9 @@
   "author": "Jeremias Andris",
   "license": "MIT",
   "dependencies": {
-    "jean-amd": "1.0.1"
+    "jean-amd": "1.0.1",
+    "jean-failure": "^1.0.1",
+    "jean-type-check": "^1.0.6"
   },
   "repository": {
     "type": "git",
